@@ -1,0 +1,170 @@
+/* =============== HOME =============== */
+.home {
+  position: relative;
+  background: linear-gradient(180deg, hsl(210, 88%, 20%), hsl(210, 70%, 58%));
+  height: 650px;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.home_title {
+  color: var(--white-color);
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.home img {
+  position: absolute;
+}
+
+.home_mountain-1,
+.home_snow {
+  bottom: 0;
+}
+
+.home_village,
+.home_pine,
+.home_moon,
+.home_trineo {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.home_village {
+  width: 260px;
+  bottom: 1rem;
+}
+
+.home_pine {
+  width: 250px;
+  bottom: 4rem;
+}
+
+.home_mountain-2 {
+  bottom: 3rem;
+}
+
+.home_mountain-3 {
+  bottom: 6rem;
+}
+
+.home_moon {
+  width: 300px;
+  bottom: 8.5rem;
+}
+
+.home_trineo {
+  width: 250px;
+  bottom: 14.5rem;
+}
+
+/* =============== ABOUT =============== */
+.about_container {
+  position: relative;
+  row-gap: 3.5rem;
+}
+
+.about_data {
+  text-align: center;
+}
+
+.about_description {
+  margin-bottom: 2rem;
+}
+
+.about_img {
+  width: 320px;
+  justify-self: center;
+}
+
+.about_snow-1 {
+  top: 12rem;
+  left: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+
+.about_snow-2 {
+  right: -0.75rem;
+  bottom: 0.5rem;
+  animation: var(--animate-snow-2);
+}
+
+/* =============== SEND =============== */
+.send_container {
+  position: relative;
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: 3rem;
+  padding-top: 1.5rem;
+}
+
+.send_card {
+  text-align: center;
+}
+
+.send_img {
+  width: 180px;
+  margin-bottom: 0.75rem;
+}
+
+.send_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.send_description {
+  font-size: var(--small-font-size);
+  padding-inline: 1.5rem;
+}
+
+.send_snow-1 {
+  top: 7rem;
+  left: 0;
+  animation: var(--animate-snow-1);
+}
+
+.send_snow-2 {
+  top: 23rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
+
+.send_snow-3 {
+  bottom: 9rem;
+  left: 0;
+  animation: var(--animate-snow-1);
+}
+
+/* =============== CELEBRATE =============== */
+.celebrate_container {
+  position: relative;
+  row-gap: 3.5rem;
+}
+
+.celebrate_data {
+  text-align: center;
+}
+
+.celebrate_description {
+  margin-bottom: 2rem;
+}
+
+.celebrate_img {
+  width: 320px;
+  justify-self: center;
+}
+
+.celebrate_snow-1 {
+  top: 1.5rem;
+  left: 1.5rem;
+  animation: var(--animate-snow-1);
+}
+
+.celebrate_snow-2 {
+  top: 18rem;
+  right: 0;
+  animation: var(--animate-snow-2);
+}
