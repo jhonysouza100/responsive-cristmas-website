@@ -147,14 +147,14 @@
   
   /* Show Scroll Up */
   .show-scroll {
-    bottom: 5rem;
+    bottom: 4.4rem;
   }
 
 
   /*=============== SOURCES BUTTON===============*/
 .sources-btn {
   position: fixed;
-  bottom: 5rem;
+  bottom: 4.4rem;
   left: 15px;
   z-index: 99999;
   align-items: center;

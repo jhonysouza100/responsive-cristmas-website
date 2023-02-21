@@ -5,6 +5,7 @@
   height: 650px;
   padding-top: 7rem;
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .home_title {
