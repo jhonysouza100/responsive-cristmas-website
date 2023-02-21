@@ -134,8 +134,8 @@
     background-color: var(--white-color);
     display: inline-flex;
     padding: .45rem;
-    border-radius: .45rem;
     font-size: 1rem;
+    border-radius: .45rem;
     color: var(--body-color);
     z-index: var(--z-tooltip);
     transition: bottom .3s, transform .3s;
@@ -149,3 +149,54 @@
   .show-scroll {
     bottom: 5rem;
   }
+
+
+  /*=============== SOURCES BUTTON===============*/
+.sources-btn {
+  position: fixed;
+  bottom: 5rem;
+  left: 15px;
+  z-index: 99999;
+  align-items: center;
+}
+
+.sources-btn a {
+  font-family: "Poppins", sans-serif;
+  padding: 8px 13px;
+  font-size: 11px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50px;
+  color: #fff;
+  background: #2c974a57;
+  border: 1px solid #2c974b /*rgba(27,31,36,0.15)*/;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(27, 31, 36, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+  cursor: pointer;
+  appearance: none;
+  user-select: none;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.sources-btn a:hover {
+  color: #fff;
+  background: #2da44e;
+}
+
+@media screen and (min-width: 600px) {
+  .sources-btn {
+    left: 40px;
+  }
+
+  .sources-btn a {
+    padding: 5px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+  }
+}

@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .nav_toggle,
   .nav_close,
   .nav_img-1,
@@ -49,12 +49,6 @@
   .send_container {
     grid-template-columns: repeat(2, 200px);
     column-gap: 5rem;
-  }
-
-  .scrollup {
-    font-size: 1.5rem;
-    padding: 0.35rem;
-    right: 10%;
   }
 }
 
@@ -158,11 +152,7 @@
   }
 
   .scrollup {
-    right: 3rem;
-  }
-
-  .scrollup {
-    right: 3rem;
+    right: 2.5rem;
   }
 }
 
@@ -205,11 +195,6 @@
     width: 500px;
     bottom: 28rem;
   }
-
-  .scrollup {
-    font-size: 2rem;
-    padding: 0.55rem;
-  }
 }
 
 /* For 2K+ resolutions */
@@ -218,11 +203,5 @@
     max-width: 1200px;
     height: 998px;
     margin-inline: auto;
-  }
-
-  .scrollup {
-    font-size: 2rem;
-    padding: 0.75rem;
-    right: 30%;
   }
 }
