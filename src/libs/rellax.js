@@ -1,2 +1,11 @@
+import Rellax from "rellax";
+
 // =============== PARALLAX ===============
-let parallax = new Rellax(".parallax");
+const parallaxAnimation = () => {
+  
+  let parallax = new Rellax(".parallax");
+  // parallax.refresh();
+  // parallax.destroy();
+}
+
+export default parallaxAnimation;

@@ -1,12 +1,15 @@
-import { useContext } from "react";
-import AppContext from '../context/context.jsx';
+import Footer from "./Footer";
+import Header from "./Header";
+import Modals from "./Modals";
 
-function Wrapper() {
-  const {hello} = useContext(AppContext);
+function Wrapper({children}) {
   return (
-    <div>
-      {hello}
-    </div>
+    <>
+      <Header />
+      <>{children}</>
+      <Modals />
+      <Footer />
+    </>
   );
 }
 
