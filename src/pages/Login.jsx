@@ -72,8 +72,8 @@ function Login() {
             <label htmlFor="email" style={loginLabelStyle}>Email</label>
             <input type="email" {...(register("email", {required: {value: true, message: "Email is required"}}))} style={loginInputStyle} />
             {errors.email && (<span style={loginSpanStyle}>{errors.email.message}</span>)}
-            <label htmlFor="password" style={loginLabelStyle}>Password</label>
-            <input type="password" {...(register("password", {required: {value: true, message: "Password is required"}}))} style={loginInputStyle} />
+            <label htmlFor="current-password" style={loginLabelStyle}>Password</label>
+            <input type="current-password" {...(register("password", {required: {value: true, message: "Password is required"}}))} style={loginInputStyle} />
             {errors.password && (<span style={loginSpanStyle}>{errors.password.message}</span>)}
             <label htmlFor="confirmPassword" style={loginLabelStyle}>Confirm Password</label>
             <input type="confirmPassword" {...(register("confirmPassword", {required: {value: true, message: "Please confirm your password"}}))} style={loginInputStyle} />
