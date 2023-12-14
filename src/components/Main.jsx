@@ -70,7 +70,7 @@ function Main() {
             <p className="about_description">{textAbout3}</p>
 
             {/* <a href="#" className="button">{textAbout4}</a> */}
-            <Link to="/login" className="button">{textAbout4}</Link>
+            <Link to="/signin" className="button">{textAbout4}</Link>
           </div>
 
           <img
