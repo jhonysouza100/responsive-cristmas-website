@@ -8,18 +8,29 @@ function Signup() {
 
   // hook de react-hook-from, maneja el comportamiento por defecto del formulario
   const onSubmit = handleSubmit( async (data) => {
+
+    if(data.password != data.confirmPassword) {
+      return alert("Password do not match")
+    }
+    
     const res = await fetch(`${process.env.BACKEND_URL}`, {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        username: data.username,
+        email: data.email,
+        password: data.password
+      }),
       headers: {'Content-Type': 'application/json'}
     });
 
+    // const resJSON = await res.json();
+    // console.log(resJSON);
+
     if(res.ok) {
       // Redirect to '/'
-      navigate('/login');
+      navigate('/home');
     }
 
-    console.log(res);
 
   });
 
