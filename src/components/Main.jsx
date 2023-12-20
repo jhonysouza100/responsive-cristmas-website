@@ -2,9 +2,22 @@ import "../styles/Main.css";
 import images from '../data/images.js';
 import texts from '../data/texts.js';
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import {AuthButton, getAuthProfileData} from "../hooks/useAuth";
+import { usePost } from "../hooks/useFetch";
+
 function Main() {
   const { aboutChristmas, celebrateChurch, homeMoon, homeMountain1, homeMountain2, homeMountain3, homePineTree, homeSnow, homeTrineoSanta, homeVillage, sendGifts, sendNight, sendSanta, snowImg } = images;
   const { textHome, textAbout, textAbout2, textAbout3, textAbout4, textSend, textSend2, textSend3, textSend4, textSend5, textSend6, textSend7, textSend8, textCelebrate, textCelebrate2, textCelebrate3, textCelebrate4 } = texts;
+
+  const data = getAuthProfileData();
+  useEffect(() => {
+    // Este efecto se ejecutará después de que getAuthProfileData haya actualizado el estado
+    // console.log(data);
+    if(data) {
+      usePost(data);
+    }
+  }, [data]);
 
   return (
     <main className="main">
@@ -70,7 +83,8 @@ function Main() {
             <p className="about_description">{textAbout3}</p>
 
             {/* <a href="#" className="button">{textAbout4}</a> */}
-            <Link to="/signup" className="button">{textAbout4}</Link>
+            {/* <Link to="/login" className="button">{textAbout4}</Link> */}
+            <AuthButton />  
           </div>
 
           <img

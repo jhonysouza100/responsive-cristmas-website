@@ -8,6 +8,7 @@ import Wrapper from "../components/Wrapper.jsx";
 
 function Home() {
   const { hello } = useContext(AppContext);
+  
    // carga las animaciones
    useEffect(() => { // se ejecuta al primer montado del DOM
     // SCROLL animation

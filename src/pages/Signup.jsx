@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form";
+import { usePost } from '../hooks/useFetch';
 function Signup() {
 
   const navigate = useNavigate();
@@ -8,29 +9,12 @@ function Signup() {
 
   // hook de react-hook-from, maneja el comportamiento por defecto del formulario
   const onSubmit = handleSubmit( async (data) => {
-
-    if(data.password != data.confirmPassword) {
-      return alert("Password do not match")
-    }
-    
-    const res = await fetch(`${process.env.BACKEND_URL}`, {
-      method: 'POST',
-      body: JSON.stringify({
-        username: data.username,
-        email: data.email,
-        password: data.password
-      }),
-      headers: {'Content-Type': 'application/json'}
-    });
-
-    // const resJSON = await res.json();
-    // console.log(resJSON);
+    const res = await usePost(data);
 
     if(res.ok) {
       // Redirect to '/'
-      navigate('/home');
+      navigate('/');
     }
-
 
   });
 
